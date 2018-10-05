@@ -1,0 +1,141 @@
+1000: 40 L0           ; JMP L0
+1002: 32 00           ; MVI A, 0
+1004: 11 10           ; ADI 10
+1006: 34 00 00        ; LXI AR, 0
+1009: 31              ; MOV M, A
+100A: 32 00           ; MVI A, 0
+100C: 13 10           ; SUI 10
+100E: 34 00 04        ; LXI AR, 4
+1011: 31              ; MOV M, A
+1012: 32 00           ; MVI A, 0
+1014: 34 00 04        ; LXI AR, 4
+1017: 10              ; ADD M
+1018: 34 00 02        ; LXI AR, 2
+101B: 31              ; MOV M, A
+101C: 32 00           ; MVI A, 0
+101E: 11 10           ; ADI 10
+1020: 34 00 02        ; LXI AR, 2
+1023: 10              ; ADD M
+1024: 34 00 05        ; LXI AR, 5
+1027: 31              ; MOV M, A
+1028: 32 00           ; MVI A, 0
+102A: 11 10           ; ADI 10
+102C: 34 00 05        ; LXI AR, 5
+102F: 12              ; SUB M
+1030: 34 00 01        ; LXI AR, 1
+1033: 31              ; MOV M, A
+1034: 32 00           ; MVI A, 0
+1036: 34 00 01        ; LXI AR, 1
+1039: 10              ; ADD M
+103A: 13 10           ; SUI 10
+103C: 34 00 06        ; LXI AR, 6
+103F: 31              ; MOV M, A
+1040: 32 00           ; MVI A, 0
+1042: 34 00 02        ; LXI AR, 2
+1045: 12              ; SUB M
+1046: 34 00 07        ; LXI AR, 7
+1049: 31              ; MOV M, A
+104A: 32 00           ; MVI A, 0
+104C: 13 10           ; SUI 10
+104E: 34 00 08        ; LXI AR, 8
+1051: 31              ; MOV M, A
+1052: 32 00           ; MVI A, 0
+1054: 34 00 07        ; LXI AR, 7
+1057: 10              ; ADD M
+1058: 34 00 08        ; LXI AR, 8
+105B: 12              ; SUB M
+105C: 34 00 09        ; LXI AR, 9
+105F: 31              ; MOV M, A
+1060: 32 00           ; MVI A, 0
+1062: 34 00 00        ; LXI AR, 0
+1065: 10              ; ADD M
+1066: 11 10           ; ADI 10
+1068: 34 00 02        ; LXI AR, 2
+106B: 10              ; ADD M
+106C: 34 00 0A        ; LXI AR, A
+106F: 31              ; MOV M, A
+1070: 32 00           ; MVI A, 0
+1072: 34 00 00        ; LXI AR, 0
+1075: 10              ; ADD M
+1076: 34 00 06        ; LXI AR, 6
+1079: 12              ; SUB M
+107A: 34 00 09        ; LXI AR, 9
+107D: 10              ; ADD M
+107E: 34 00 0A        ; LXI AR, A
+1081: 10              ; ADD M
+1082: 34 00 02        ; LXI AR, 2
+1085: 31              ; MOV M, A
+1086: 32 00           ; MVI A, 0
+1088: 11 0            ; ADI 0
+108A: 34 00 01        ; LXI AR, 1
+108D: 12              ; SUB M
+108E: 44 10 98        ; JNZ L1
+1090: 32 00           ; MVI A, 0
+1092: 11 10           ; ADI 10
+1094: 34 00 00        ; LXI AR, 0
+1097: 31              ; MOV M, A
+1098: 32 00           ; MVI A, 0
+109A: 11 10           ; ADI 10
+109C: 34 00 02        ; LXI AR, 2
+109F: 12              ; SUB M
+10A0: 34 00 0B        ; LXI AR, B
+10A3: 31              ; MOV M, A
+10A4: 32 00           ; MVI A, 0
+10A6: 34 00 0B        ; LXI AR, B
+10A9: 10              ; ADD M
+10AA: 34 00 00        ; LXI AR, 0
+10AD: 12              ; SUB M
+10AE: 43 10 C4        ; JL L2
+10B0: 32 00           ; MVI A, 0
+10B2: 11 10           ; ADI 10
+10B4: 34 00 02        ; LXI AR, 2
+10B7: 12              ; SUB M
+10B8: 44 10 C4        ; JNZ L3
+10BA: 32 00           ; MVI A, 0
+10BC: 11 10           ; ADI 10
+10BE: 11 10           ; ADI 10
+10C0: 34 00 00        ; LXI AR, 0
+10C3: 31              ; MOV M, A
+10C4: 32 00           ; MVI A, 0
+10C6: 13 10           ; SUI 10
+10C8: 34 00 00        ; LXI AR, 0
+10CB: 12              ; SUB M
+10CC: 43 10 E4        ; JL L5
+10CE: 32 00           ; MVI A, 0
+10D0: 34 00 00        ; LXI AR, 0
+10D3: 10              ; ADD M
+10D4: 13 10           ; SUI 10
+10D6: 34 00 00        ; LXI AR, 0
+10D9: 31              ; MOV M, A
+10DA: 32 00           ; MVI A, 0
+10DC: 11 10           ; ADI 10
+10DE: 34 00 01        ; LXI AR, 1
+10E1: 31              ; MOV M, A
+10E2: 40 10 C4        ; JMP L4
+10E4: 32 00           ; MVI A, 0
+10E6: 11 10           ; ADI 10
+10E8: 34 00 02        ; LXI AR, 2
+10EB: 12              ; SUB M
+10EC: 44 11 0C        ; JNZ L7
+10EE: 32 00           ; MVI A, 0
+10F0: 11 10           ; ADI 10
+10F2: 34 00 00        ; LXI AR, 0
+10F5: 12              ; SUB M
+10F6: 44 11 0A        ; JNZ L9
+10F8: 32 00           ; MVI A, 0
+10FA: 11 10           ; ADI 10
+10FC: 34 00 02        ; LXI AR, 2
+10FF: 31              ; MOV M, A
+1100: 32 00           ; MVI A, 0
+1102: 11 10           ; ADI 10
+1104: 34 00 00        ; LXI AR, 0
+1107: 31              ; MOV M, A
+1108: 40 10 EE        ; JMP L8
+110A: 40 10 E4        ; JMP L6
+110C: 46 11 0F        ; CALL DISPLAY
+110E: 51              ; HLT
+110F: 32 00           ; MVI A, 0
+1111: 11 10           ; ADI 10
+1113: 34 00 00        ; LXI AR, 0
+1116: 31              ; MOV M, A
+1117: 47              ; RET
